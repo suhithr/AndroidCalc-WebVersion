@@ -1,0 +1,25 @@
+.pane {
+	float: left;
+}
+
+.num {
+	background-color: #33322E;
+}
+
+.sym {
+	background-color: #8E8B7D;
+}
+
+button {
+	border-radius: 0;
+	border: 0;
+	font-weight: 100;
+	color:#FFFFFF;
+	font-size: 200%;
+	height: 45px;
+	width: 45px;
+}
+
+#simplecalc {
+	background: #000000;
+}
