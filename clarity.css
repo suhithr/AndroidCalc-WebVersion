@@ -29,8 +29,12 @@ button {
 	text-align: center;
 }
 
+button:hover {
+	border: 1px solid white;
+}
+
 #simplecalc {
-	width: 250px;
+	width: 255px;
 	margin: 0 auto;
 }
 
@@ -40,9 +44,10 @@ button {
 
 .intro {
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 40px;
+	font-size:5vh;
 	text-align: center;
-	background: url('intro.jpg') no-repeat center center fixed;
+	background: url('intro.jpg') no-repeat center center;
+	background-attachment: fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,7 +59,8 @@ button {
 
 #greeting {
 	position: absolute;
-	top: 50%;
+	top: 30%;
+	bottom: 40%;
 	left: 40%;
 	right: 40%;
 }
