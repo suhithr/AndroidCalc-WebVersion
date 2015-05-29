@@ -1,3 +1,6 @@
+body {
+	font-family: 'Oswald', sans-serif;
+}
 
 .num, .row{
 	background-color: #33322E;
@@ -14,6 +17,14 @@
 	width: 52px;
 	font-size: 25px;
 }
+
+.sym_sci {
+	height: 80px;
+	width: 80px;
+	background-color: #8E8B7D;
+	float: left;
+}
+
 .pane {
 	float: left;
 }
@@ -24,8 +35,11 @@
 	background-color: #00EBFF;
 }
 
-body {
-	font-family: 'Oswald', sans-serif;
+#sci {
+	background-color: #8E8B7D;
+	height: 240px;
+	width: 80px;
+	font-size: 25px;
 }
 
 #btn_del {
@@ -54,7 +68,7 @@ button {
 }
 
 #simplecalc {
-	width: 255px;
+	width: 330px;
 	margin: 0 auto;
 }
 
@@ -69,7 +83,7 @@ button {
 }
 
 .display {
-	width: 246px;
+	width: 330px;
 	text-align: right;
 	font-family: 'Roboto Condensed', sans-serif;
 	border-style: solid;
@@ -140,6 +154,7 @@ button {
 	height: 60vh;
 }
 
+
 @media (max-width: 480px) {
 	.intro {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -157,5 +172,16 @@ button {
 
 	.heading{
 		font-size: 7vw;
+	}
+
+}
+
+@media (max-width: 332px) {
+	#sci {
+		visibility: hidden;
+	}
+
+	.display {
+		width: 250px;
 	}
 }
