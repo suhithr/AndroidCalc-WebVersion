@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- TODO add the sections of content into clickable tabs 
+	Add the footer and icons :)
+	Basic task -> DONE
+	Scientific Calculator with SImple Functions -> DONE
+-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -36,34 +41,35 @@
 				</div>
 			</div>
 		</section>
-		<section id="do"> <!--do is the class for what I do -->
+		<section id="do"> <!--do is the class for what I do TODO fill in later-->
 			<div class = "box">
+
 			</div>
 		</section>
 		<section id="calculator">
-			<h1 align="center">Calculator<h1>
+			<h1 align="center">Lollipop Calculator<h1>
 			<div class="box">
-				<div id="simplecalc">
+				<div id="scalc">
 					<input id="displayexpn" class="display" type="text">
 					<input id="displayans"  class="display" type="text">
 					<br>
 					<div class="pane">
-						<div class="row">
+						<div class="row numcol">
 							<button class="num" id="btn_7" onclick="show(7)">7</button>
 							<button class="num" id="btn_8" onclick="show(8)">8</button>
 							<button class="num" id="btn_9" onclick="show(9)">9</button>
 						</div>
-						<div class="row">
+						<div class="row numcol">
 							<button class="num" id="btn_4" onclick="show(4)">4</button>
 							<button class="num" id="btn_5" onclick="show(5)">5</button>
 							<button class="num" id="btn_6" onclick="show(6)">6</button>
 						</div>
-						<div class="row">
+						<div class="row numcol">
 							<button class="num" id="btn_1" onclick="show(1)">1</button>
 							<button class="num" id="btn_2" onclick="show(2)">2</button>
 							<button class="num" id="btn_3" onclick="show(3)">3</button>
 						</div>
-						<div class="row">
+						<div class="row numcol">
 							<button class="num" id="btn_dec" onclick="show('.')">.</button>
 							<button class="num" id="btn_0" onclick="show(0)">0</button>
 							<button class="num" id="btn_eq" onclick="eql()">=</button>
@@ -91,16 +97,18 @@
 					<div class="pane" id="sci">
 						<div class="row">
 							<button class="sym_sci" id="btn_pow" onclick="fact()">!</button>
+							<button class="sym_sci" id="btn_pow" onclick="power(2)">^2</button>
 						</div>
 						<div class="row">
 							<button class="sym_sci" id="btn_pow" onclick="show('(')">(</button>
+							<button class="sym_sci" id="btn_pow" onclick="power(3)">^3</button>
 						</div>
 						<div class="row">
 							<button class="sym_sci" id="btn_pow" onclick="show(')')">)</button>
+							<button class="sym_sci" id="btn_pow" onclick="power(1)">^.5</button>
 						</div>
 					</div>
 			</div>
 		</section>
-
 	</body>
 </html>

@@ -2,12 +2,12 @@ body {
 	font-family: 'Oswald', sans-serif;
 }
 
-.num, .row{
+.num, .numcol{
 	background-color: #33322E;
 }
 
 .num {
-		height: 60px;
+	height: 60px;
 	width: 60px;
 }
 
@@ -16,6 +16,10 @@ body {
 	height: 48px;
 	width: 52px;
 	font-size: 25px;
+}
+
+#sim {
+	background-color: #8E8B7D;
 }
 
 .sym_sci {
@@ -38,7 +42,7 @@ body {
 #sci {
 	background-color: #8E8B7D;
 	height: 240px;
-	width: 80px;
+	width: 160px;
 	font-size: 25px;
 }
 
@@ -50,6 +54,8 @@ button {
 	border-radius: 0;
 	border: 0;
 	padding: 0;
+	margin-left: 0px;
+	margin-right: 0px;
 	font-weight: 100;
 	color: #FFFFFF;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -67,8 +73,13 @@ button {
 	background-color: #C3C6C0;
 }
 
-#simplecalc {
-	width: 330px;
+.sym_sci:hover {
+	border-radius: 35px;
+	background-color: #C3C6C0;
+}
+
+#scalc {
+	width: 412px;
 	margin: 0 auto;
 }
 
@@ -83,7 +94,7 @@ button {
 }
 
 .display {
-	width: 330px;
+	width: 410px;
 	text-align: right;
 	font-family: 'Roboto Condensed', sans-serif;
 	border-style: solid;
@@ -176,7 +187,7 @@ button {
 
 }
 
-@media (max-width: 332px) {
+@media (max-width: 412px) {
 	#sci {
 		visibility: hidden;
 	}

@@ -1,3 +1,4 @@
+//Show the digits int he expression display
 function show(it) {
 	var disp = document.getElementById('displayexpn');
 		
@@ -5,6 +6,7 @@ function show(it) {
 		eql();
 }
 
+//Compute the answer for the answer display
 function eql() {
 	var dispex = document.getElementById('displayexpn');
 	var dispans = document.getElementById('displayans');
@@ -15,6 +17,7 @@ function eql() {
 	
 }
 
+//Deletes a character
 function del() {
 	var disp = document.getElementById('displayexpn');
 
@@ -24,15 +27,15 @@ function del() {
 
 }
 
+//Computes factorial and displays it
 function fact() {
 	var numobj = document.getElementById('displayexpn');
 	var dispans = document.getElementById('displayans');
-	console.log(numobj);
+	
 	var num = Number(numobj.value);
 
 	document.getElementById('displayexpn').value += '!';
 
-	console.log(num);
 	var ans = 1;
 	var i;
 	if( num > 0) { 
@@ -47,6 +50,22 @@ function fact() {
 
 }
 
-function ln() {
-	
+//Computes powers and displays them
+function power(n) {
+	var numobj = document.getElementById('displayexpn');
+	var dispans = document.getElementById('displayans');
+
+	var num = Number(numobj.value);
+	console.log(num);
+	var ans;
+	if( n == 2 || n ==3 ) {
+		document.getElementById('displayexpn').value += '^' + n;
+		ans = Math.pow(num, n);
+	}
+	else {
+		document.getElementById('displayexpn').value += '^' + .5;
+		ans = Math.pow(num, .5);
+	}
+
+	dispans.value = ans;
 }
