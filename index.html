@@ -5,6 +5,7 @@
 		<meta http-equiv="content-type" content="text/html">
 		<meta name="author" content="Suhith Rajesh">
 		<meta name="description" content="Spider Web Development Induction Task 1">
+		<meta name=viewport content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="clarity.css">
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -16,14 +17,24 @@
 		<section class="intro">
 			<div class="box">
 				<div id="greeting">
-					<h1> Hi, I am Suhith</h1>
-					<h3> I come in peace</h3>
+					<h2> Hi, I am Suhith</h2>
+					<h4> I like to build stuff</h4>
 				</div>
 			</div>
 		</section>
 		<section id="code">
 			<div class="box">
-				<div id=
+				<div class="heading">
+					I code
+				</div>
+				<div class="languages">
+					<div id="html">HTML5</div>
+					<div id="css">CSS3</div>
+					<div id="jscript">Javascript</div>
+					<div id="python">Python</div>
+					<div id="php">PHP</div>
+					<div id="others">And more</div>
+				</div>
 			</div>
 		</section>
 		<section id="do"> <!--do is the class for what I do -->
@@ -34,7 +45,8 @@
 			<h1 align="center">Calculator<h1>
 			<div class="box">
 				<div id="simplecalc">
-					<input id="display" type="text">
+					<input id="displayexpn" class="display" type="text">
+					<input id="displayans"  class="display" type="text">
 					<br>
 					<div class="pane">
 						<div class="row">
@@ -43,37 +55,40 @@
 							<button class="num" id="btn_9" onclick="show(9)">9</button>
 						</div>
 						<div class="row">
-							<button class="num" id="btn_4">4</button>
-							<button class="num" id="btn_5">5</button>
-							<button class="num" id="btn_6">6</button>
+							<button class="num" id="btn_4" onclick="show(4)">4</button>
+							<button class="num" id="btn_5" onclick="show(5)">5</button>
+							<button class="num" id="btn_6" onclick="show(6)">6</button>
 						</div>
 						<div class="row">
-							<button class="num" id="btn_1">1</button>
-							<button class="num" id="btn_2">2</button>
-							<button class="num" id="btn_3">3</button>
+							<button class="num" id="btn_1" onclick="show(1)">1</button>
+							<button class="num" id="btn_2" onclick="show(2)">2</button>
+							<button class="num" id="btn_3" onclick="show(3)">3</button>
 						</div>
 						<div class="row">
-							<button class="num" id="btn_dec">.</button>
-							<button class="num" id="btn_0">0</button>
-							<button class="num" id="btn_eq">=</button>
+							<button class="num" id="btn_dec" onclick="show('.')">.</button>
+							<button class="num" id="btn_0" onclick="show(0)">0</button>
+							<button class="num" id="btn_eq" onclick="eql()">=</button>
 						</div>
 					</div>
 					<div class="pane">
 						<div class="row">
-							<button class="sym" id="btn_del">DEL</button>
+							<button class="sym" id="btn_del" onclick="del()">DEL</button>
 						</div>
 						<div class="row">
-							<button class="sym" id="btn_div">&divide;</button>
+							<button class="sym" id="btn_div" onclick="show('/')">&divide;</button>
 						</div>
 						<div class="row">
-							<button class="sym" id="btn_mul">&times;</button>
+							<button class="sym" id="btn_mul" onclick="show('*')">&times;</button>
 						</div>
 						<div class="row">
-							<button class="sym" id="btn_sub">-</button>
+							<button class="sym" id="btn_sub" onclick="show('-')">-</button>
 						</div>
 						<div class="row">
-							<button class="sym" id="btn_add">+</button>
+							<button class="sym" id="btn_add" onclick="show('+')">+</button>
 						</div>
+					</div>
+					<div class="pane" id="blu">
+					</div>
 			</div>
 		</section>
 
