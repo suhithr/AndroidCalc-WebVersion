@@ -102,18 +102,42 @@ button {
 
 .heading {
 	font-family: 'Oswald', sans-serif;
-	font-size: 4vh;
+	font-size: 7vh;
 	color: #E1E2DF;
+	text-align: center;
 }
 
-#html:hover, #css:hover, #php:hover, #python:hover, #jscript:hover, #others {
-	background-color: #C3C6C0;
+#html, #css, #php, #jscript, #python, #php {
+	padding-right: 12vw;
+	padding-left: 12vw;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+	font-size: 3vh;
+
+}
+
+#html, #python, #php{
 	float: left;
+}
+
+#jscript, #css {
+	float: left;
+}
+
+#html:hover, #css:hover, #php:hover, #python:hover, #jscript:hover {
+	background-color: #C3C6C0;
+	border-radius: 2vh;
+
+}
+
+.languages {
+	margin: 0 auto;
 }
 
 #code {
 	background-color: #313131;
-	color: #FFFFFF;
+	color: #313149;
+	height: 60vh;
 }
 
 @media (max-width: 480px) {
@@ -129,5 +153,9 @@ button {
 	background-size: cover;
 	color: white;
 	height: 100vh;
+	}
+
+	.heading{
+		font-size: 7vw;
 	}
 }
